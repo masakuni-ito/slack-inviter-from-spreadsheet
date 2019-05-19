@@ -88,7 +88,7 @@ function getChannelId(channelName) {
   })
 
   if (!channelId) {
-    throw new Error("Channel can not see.")
+    throw new Error("Channel is not defined.")
   }
 
   return channelId
@@ -105,7 +105,7 @@ function getUserId(userMail) {
   })
 
   if (!userId) {
-    throw new Error("User can not see.")
+    throw new Error("User is not exists.")
   }
 
   return userId
